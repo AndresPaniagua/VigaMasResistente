@@ -1,0 +1,40 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:padding="20dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:textSize="24dp"
+    	android:text="Ingrese la viga:" />
+	<EditText
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:inputType="text"
+    	android:textSize="24dp"
+    	local:MvxBind="Text Cadena" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        local:MvxBind="Click CalculateCommand"/>
+
+	<View
+    	android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:layout_margin="30dp"
+    	android:background="@android:color/darker_gray" />
+	<TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="@android:color/holo_blue_dark"
+    	android:textSize="24dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+    	local:MvxBind="Text Result" />
+</LinearLayout>
