@@ -23,6 +23,13 @@
         android:text="Calculate"
         local:MvxBind="Click CalculateCommand"/>
 
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Visibility Visibility(IsRunning)"
+        android:indeterminateOnly="true"
+        android:keepScreenOn="true" />
+
 	<View
     	android:layout_width="match_parent"
     	android:layout_height="1dp"

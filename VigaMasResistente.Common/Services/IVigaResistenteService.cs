@@ -2,6 +2,8 @@
 {
     public interface IVigaResistenteService
     {
-        bool Calculate(string cadena);
+        string Calculate(string cadena);
+
+        int Column(string cadena, int value);
     }
 }
